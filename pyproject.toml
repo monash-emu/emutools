@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "emutools"
+version = "0.1"
+readme = "README.md"
+license = "BSD-2-Clause"
+homepage = "https://github.com/monash-emu/emutools"
+repository = "https://github.com/monash-emu/aust-covid/emutools"
+documentation = "https://github.com/monash-emu/aust-covid/emutools"
+keywords = [
+    "covid19",
+    "summerepi"
+]
+description = "General tools to support Monash EMU projects, starting with code for TeX documentation"
+authors = ["James Trauer <james.trauer@monash.edu>"]
+packages = [
+    {include = "emutools"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0, <4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
