@@ -7,17 +7,22 @@ homepage = "https://github.com/monash-emu/emutools"
 repository = "https://github.com/monash-emu/aust-covid/emutools"
 documentation = "https://github.com/monash-emu/aust-covid/emutools"
 keywords = [
-    "covid19",
-    "summerepi"
+    "tex",
+    "latex",
 ]
 description = "General tools to support Monash EMU projects, starting with code for TeX documentation"
-authors = ["James Trauer <james.trauer@monash.edu>"]
+authors = [
+    "James Trauer <james.trauer@monash.edu>",
+    "David Shipman <david.shipman@monash.edu>",
+]
 packages = [
     {include = "emutools"}
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.8.0, <4.0.0"
+pandas = ">=1.4"
+plotly = ">=5.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
